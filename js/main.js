@@ -39,14 +39,12 @@
         dots: false,
         loop: true,
         margin: 0,
-        nav : true,
+        nav : false,
         navText : [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ]
     });
-
-
 
     // Project carousel
     $(".project-carousel").owlCarousel({
