@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Saroma - Nến Thơm</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Allura&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Đang tải...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 d-none d-lg-block">
+      <div class="container px-0"></div>
+    </div>
+    <!-- Topbar End -->
+    <div class="container-fluid sticky-top px-0">
+      <div
+        class="position-absolute bg-dark"
+        style="left: 0; top: 0; width: 100%; height: 100%"
+      ></div>
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+          <a href="index.html" class="navbar-brand p-0">
+            <img src="img/logo.png" alt="Saroma" class="img-fluid" style="height: 70px; margin-left: 20px;"> <!-- Tăng giá trị theo nhu cầu -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+              <a
+                href="index.html"
+                class="nav-item nav-link active"
+                style="color: #000"
+                >Trang Chủ</a
+              >
+              <a href="about.html" class="nav-item nav-link">Giới Thiệu</a>
+              <a href="service.html" class="nav-item nav-link">Dịch Vụ</a>
+              <a href="project.html" class="nav-item nav-link">Dự Án</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Trang</a
+                >
+                <div class="dropdown-menu m-0">
+                  <a href="blog.html" class="dropdown-item"
+                    >Blog Của Chúng Tôi</a
+                  >
+                  <a href="team.html" class="dropdown-item">Đội Ngũ</a>
+                  <a href="testimonial.html" class="dropdown-item">Cam Kết</a>
+                  <a href="faqs.html" class="dropdown-item">FAQs</a>
+                  <a href="404.html" class="dropdown-item">Trang 404</a>
+                </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
+            </div>
+            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+              <button
+                class="btn btn-primary btn-md-square mx-2"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+              <a
+                href="#"
+                class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0"
+              >
+                Bắt Đầu Với Saroma
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h4 class="modal-title mb-0" id="exampleModalLabel">
+              Tìm kiếm sản phẩm
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="từ khóa"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+      <div class="header-carousel-item">
+        <div
+          class="header-carousel-item-img-1"
+          style="
+            position: relative;
+            padding-top: 50%;
+            height: 500px;
+            overflow: hidden;
+          "
+        >
+          <img
+            src="img/carousel-1.jpg"
+            class="img-fluid w-100"
+            alt="Saroma - Hương thơm thiên nhiên"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            "
+          />
+          <div class="nature-icon">
+            <i class="fas fa-tree"></i>
+            <!-- Example nature icon -->
+          </div>
+        </div>
+        <div class="carousel-caption">
+          <div class="carousel-caption-inner text-start p-3">
+            <h1
+              class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated"
+              data-animation="fadeInUp"
+              data-delay="1.3s"
+              style="animation-delay: 1.3s"
+            >
+              Mang Hơi Thở Sapa Vào Mọi Không Gian
+            </h1>
+            <p
+              class="mb-5 fs-5 fadeInUp animate__animated"
+              data-animation="fadeInUp"
+              data-delay="1.5s"
+              style="animation-delay: 1.5s"
+            >
+              Saroma là sự kết hợp hoàn hảo của thiên nhiên Sapa với hương thơm
+              nồng nàn, đem đến cảm giác bình yên và thư thái cho mọi không gian
+              sống.
+            </p>
+            <a
+              class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated"
+              data-animation="fadeInUp"
+              data-delay="1.5s"
+              style="animation-delay: 1.7s"
+              href="#"
+              >Khám Phá Ngay</a
+            >
+            <a
+              class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated"
+              data-animation="fadeInUp"
+              data-delay="1.5s"
+              style="animation-delay: 1.7s"
+              href="#"
+              >Xem Thêm</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="header-carousel-item">
+        <div
+          class="header-carousel-item-img-2"
+          style="
+            position: relative;
+            padding-top: 50%;
+            height: 500px;
+            overflow: hidden;
+          "
+        >
+          <img
+            src="img/carousel-2.jpg"
+            class="img-fluid w-100"
+            alt="Saroma - Cảm hứng Sapa"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            "
+          />
+          <div class="nature-icon">
+            <i class="fas fa-leaf"></i>
+            <!-- Example nature icon -->
+          </div>
+        </div>
+        <div class="carousel-caption">
+          <div class="carousel-caption-inner text-center p-3">
+            <h1 class="display-1 text-capitalize text-white mb-4">
+              Tinh Dầu Thiên Nhiên Đậm Chất Việt
+            </h1>
+            <p class="mb-5 fs-5">
+              Mỗi nến thơm Saroma là một câu chuyện về đất trời Sapa, từ ruộng
+              bậc thang đến hương hoa đào. Thắp lên là cảm nhận trọn vẹn văn hóa
+              Việt.
+            </p>
+            <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#"
+              >Khám Phá Ngay</a
+            >
+            <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="#"
+              >Xem Thêm</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="header-carousel-item">
+        <div
+          class="header-carousel-item-img-3"
+          style="
+            position: relative;
+            padding-top: 50%;
+            height: 500px;
+            overflow: hidden;
+          "
+        >
+          <img
+            src="img/carousel-3.jpg"
+            class="img-fluid w-100"
+            alt="Saroma - Hương thơm Việt Nam"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            "
+          />
+          <div class="nature-icon">
+            <i class="fas fa-seedling"></i>
+            <!-- Example nature icon -->
+          </div>
+        </div>
+        <div class="carousel-caption">
+          <div class="carousel-caption-inner text-end p-3">
+            <h1 class="display-1 text-capitalize text-white mb-4">
+              Thắp Sáng Không Gian Với Saroma
+            </h1>
+            <p class="mb-5 fs-5">
+              Không chỉ là hương thơm, Saroma là niềm tự hào Việt, đưa bạn vào
+              hành trình trải nghiệm văn hóa và vẻ đẹp của Sapa.
+            </p>
+            <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#"
+              >Khám Phá Ngay</a
+            >
+            <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="#"
+              >Xem Thêm</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about bg-light py-5" style="background-image: url(img/bg.png)">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="about-img">
+              <img
+                src="img/about-3.jpg"
+                class="img-fluid w-100 rounded-top bg-white mb-4"
+                alt="Saroma - Nến thơm thiên nhiên"
+              />
+              <img
+                src="img/about-2.jpg"
+                class="img-fluid w-100 rounded-bottom"
+                alt="Saroma - Hương Sapa"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+            <h4 class="text-primary">Về Saroma</h4>
+            <h1 class="display-5 mb-4">Mang Hơi Thở Sapa Đến Mọi Không Gian</h1>
+            <p class="text ps-4 mb-4" style="color: #000">
+              Saroma là dòng sản phẩm nến thơm thiên nhiên lấy cảm hứng từ cảnh
+              sắc và văn hóa Sapa, nơi núi đồi hùng vĩ hòa quyện cùng hương hoa
+              đào, rừng tre xanh, và vẻ đẹp bình yên của ruộng bậc thang. Saroma
+              không chỉ đơn thuần là mùi hương mà còn là trải nghiệm văn hóa và
+              tinh thần Việt.
+            </p>
+            <div class="row g-4 justify-content-between mb-5">
+              <div class="col-lg-6 col-xl-5">
+                <p class="text-dark">
+                  <i class="fas fa-check-circle text-primary me-1"></i> Hương
+                  Thơm Thiên Nhiên
+                </p>
+                <p class="text-dark mb-0">
+                  <i class="fas fa-check-circle text-primary me-1"></i> Thiết Kế
+                  Tinh Tế
+                </p>
+              </div>
+              <div class="col-lg-6 col-xl-7">
+                <p class="text-dark">
+                  <i class="fas fa-check-circle text-primary me-1"></i> Đậm Đà
+                  Bản Sắc Việt
+                </p>
+                <p class="text-dark mb-0">
+                  <i class="fas fa-check-circle text-primary me-1"></i> Cảm Hứng
+                  Từ Sapa
+                </p>
+              </div>
+            </div>
+            <div class="row g-4 justify-content-between mb-5">
+              <div class="col-xl-5">
+                <a href="#" class="btn btn-primary rounded-pill py-3 px-5"
+                  >Khám Phá Thêm</a
+                >
+              </div>
+              <div class="col-xl-7 mb-5">
+                <div class="about-customer d-flex position-relative">
+                  <img
+                    src="img/customer-img-1.jpg"
+                    class="img-fluid btn-xl-square position-absolute"
+                    style="left: 0; top: 0"
+                    alt="Khách hàng Saroma"
+                  />
+                  <img
+                    src="img/customer-img-2.jpg"
+                    class="img-fluid btn-xl-square position-absolute"
+                    style="left: 45px; top: 0"
+                    alt="Khách hàng Saroma"
+                  />
+                  <img
+                    src="img/customer-img-3.jpg"
+                    class="img-fluid btn-xl-square position-absolute"
+                    style="left: 90px; top: 0"
+                    alt="Khách hàng Saroma"
+                  />
+                  <img
+                    src="img/customer-img-1.jpg"
+                    class="img-fluid btn-xl-square position-absolute"
+                    style="left: 135px; top: 0"
+                    alt="Khách hàng Saroma"
+                  />
+                  <div
+                    class="position-absolute text-dark"
+                    style="left: 220px; top: 10px"
+                  >
+                    <p class="mb-0">Hơn 5 triệu Khách Hàng</p>
+                    <p class="mb-0">Trên Toàn Quốc</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row g-4 text-center align-items-center justify-content-center"
+              >
+                <div class="col-sm-4">
+                  <div class="bg-primary rounded p-4">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="counter-value fs-1 fw-bold text-dark"
+                        data-toggle="counter-up"
+                        >10</span
+                      >
+                      <h4
+                        class="text-dark fs-1 mb-0"
+                        style="font-weight: 600; font-size: 25px"
+                      >
+                        k+
+                      </h4>
+                    </div>
+                    <div
+                      class="w-100 d-flex align-items-center justify-content-center"
+                    >
+                      <p class="text-white mb-0">Nến Thơm Đã Bán</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="bg-dark rounded p-4">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="counter-value fs-1 fw-bold text-white"
+                        data-toggle="counter-up"
+                        >5</span
+                      >
+                      <h4
+                        class="text-white fs-1 mb-0"
+                        style="font-weight: 600; font-size: 25px"
+                      >
+                        +
+                      </h4>
+                    </div>
+                    <div
+                      class="w-100 d-flex align-items-center justify-content-center"
+                    >
+                      <p class="mb-0">Năm Phát Triển</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="bg-primary rounded p-4">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="counter-value fs-1 fw-bold text-dark"
+                        data-toggle="counter-up"
+                        >25</span
+                      >
+                      <h4
+                        class="text-dark fs-1 mb-0"
+                        style="font-weight: 600; font-size: 25px"
+                      >
+                        +
+                      </h4>
+                    </div>
+                    <div
+                      class="w-100 d-flex align-items-center justify-content-center"
+                    >
+                      <p class="text-white mb-0">Cộng Tác Viên</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid service py-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Sản Phẩm</h4>
+          <h1 class="display-4">Bộ Sưu Tập Nến Thơm Saroma</h1>
+        </div>
+        <div class="row g-4 justify-content-center text-center">
+          <div
+            class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="service-item bg-light rounded">
+              <div class="service-img">
+                <img
+                  src="img/service-1.jpg"
+                  class="img-fluid w-100 rounded-top"
+                  alt=""
+                />
+              </div>
+              <div class="service-content text-center p-4">
+                <div class="service-content-inner">
+                  <a href="#" class="h4 mb-4 d-inline-flex text-start"
+                    ><i class="fas fa-donate fa-2x me-2"></i> Nến Thơm Thân Tre
+                    Hương Sắc</a
+                  >
+                  <p class="mb-4">
+                    Nến thơm được đặt trong ống tre tự nhiên, mang lại hương
+                    thơm nhẹ nhàng và cảm giác thư giãn, thân thiện với môi
+                    trường và phù hợp để trang trí không gian sống.
+                  </p>
+                  <a class="btn btn-light rounded-pill py-2 px-4" href="#"
+                    >Tìm Hiểu Thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="service-item bg-light rounded">
+              <div class="service-img">
+                <img
+                  src="img/service-2.jpg"
+                  class="img-fluid w-100 rounded-top"
+                  alt=""
+                />
+              </div>
+              <div class="service-content text-center p-4">
+                <div class="service-content-inner">
+                  <a href="#" class="h4 mb-4 d-inline-flex text-start"
+                    ><i class="fas fa-donate fa-2x me-2"></i> Nến Thơm Thảo Mộc
+                    Đá Cuội</a
+                  >
+                  <p class="mb-4">
+                    Nến thơm được đặt trong đá cuội tự nhiên, tạo nên phong cách
+                    độc đáo và mang lại hương thơm dịu nhẹ giúp thư giãn, kết
+                    hợp hài hòa với không gian sống.
+                  </p>
+                  <a class="btn btn-light rounded-pill py-2 px-4" href="#"
+                    >Tìm Hiểu Thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="service-item bg-light rounded">
+              <div class="service-img">
+                <img
+                  src="img/service-3.jpg"
+                  class="img-fluid w-100 rounded-top"
+                  alt=""
+                />
+              </div>
+              <div class="service-content text-center p-4">
+                <div class="service-content-inner">
+                  <a href="#" class="h4 mb-4 d-inline-flex text-start"
+                    ><i class="fas fa-donate fa-2x me-2"></i> Nến Thơm Hương
+                    Rừng Sáp Đậu</a
+                  >
+                  <p class="mb-4">
+                    Nến thơm được thiết kế từ gốc cây tự nhiên, mang lại sự mộc
+                    mạc, ấm áp và hương thơm nhẹ nhàng, giúp làm dịu không gian
+                    và mang đến cảm giác thư thái.
+                  </p>
+                  <a class="btn btn-light rounded-pill py-2 px-4" href="#"
+                    >Tìm Hiểu Thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="service-item bg-light rounded">
+              <div class="service-img">
+                <img
+                  src="img/service-4.jpg"
+                  class="img-fluid w-100 rounded-top"
+                  alt=""
+                />
+              </div>
+              <div class="service-content text-center p-4">
+                <div class="service-content-inner">
+                  <a href="#" class="h4 mb-4 d-inline-flex text-start"
+                    ><i class="fas fa-donate fa-2x me-2"></i> Nến Thơm Gió Lành
+                    Treo Lơ Lửng</a
+                  >
+                  <p class="mb-4">
+                    Nến thơm với hương thơm kết hợp từ nhiều loại tinh dầu tự
+                    nhiên, tạo ra mùi hương độc đáo, giúp thư giãn và nâng cao
+                    tinh thần trong không gian sống.
+                  </p>
+                  <a class="btn btn-light rounded-pill py-2 px-4" href="#"
+                    >Tìm Hiểu Thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <a
+              class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp"
+              data-wow-delay="0.1s"
+              href="#"
+              >Thêm Sản Phẩm</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Project Start -->
+    <div class="container-fluid project" style="background-image: url(img/bg.png)">
+      <div class="container">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Dự Án Của Chúng Tôi</h4>
+          <h1 class="display-4">Khám Phá Những Dự Án Mới Nhất Của Saroma</h1>
+        </div>
+        <div
+          class="project-carousel owl-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <!-- Project Item 1 -->
+          <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="project-img">
+              <img
+                src="img/projects-1.jpg"
+                class="img-fluid w-100 rounded"
+                alt="Thảo Mộc Sapa Project"
+              />
+            </div>
+            <div class="project-content bg-light rounded p-4">
+              <div class="project-content-inner">
+                <div class="project-icon mb-3">
+                  <i class="fas fa-leaf fa-4x text-primary"></i>
+                </div>
+                <p class="text-dark fs-5 mb-3">Thảo Mộc Sapa</p>
+                <a href="#" class="h4"
+                  >Dự Án Tinh Dầu Từ Thảo Mộc Thiên Nhiên Sapa</a
+                >
+                <p class="text-dark mt-2">
+                  Tận dụng dược liệu quý từ thiên nhiên Sapa để sản xuất tinh
+                  dầu thơm ngát, mang lại không gian tươi mát và an lành cho mọi
+                  ngôi nhà Việt.
+                </p>
+                <div class="pt-4">
+                  <a class="btn btn-light rounded-pill py-3 px-5" href="#"
+                    >Xem Thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Item 2 -->
+          <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="project-img">
+              <img
+                src="img/projects-2.jpg"
+                class="img-fluid w-100 rounded"
+                alt="Dự Án Hương Sắc Bốn Mùa"
+              />
+            </div>
+            <div class="project-content bg-light rounded p-4">
+              <div class="project-content-inner">
+                <div class="project-icon mb-3">
+                  <i class="fas fa-seedling fa-4x text-primary"></i>
+                </div>
+                <p class="text-dark fs-5 mb-3">Hương Sắc Bốn Mùa</p>
+                <a href="#" class="h4">Tạo Hương Thơm Đặc Trưng Cho Từng Mùa</a>
+                <p class="text-dark mt-2">
+                  Dự án phát triển dòng sản phẩm nến thơm đại diện cho từng mùa,
+                  với hương thơm đặc trưng từ hoa đào mùa xuân đến lá vàng mùa
+                  thu.
+                </p>
+                <div class="pt-4">
+                  <a class="btn btn-light rounded-pill py-3 px-5" href="#"
+                    >Xem Thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Item 3 -->
+          <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="project-img">
+              <img
+                src="img/project-3.jpg"
+                class="img-fluid w-100 rounded"
+                alt="Project Đèn Thơm Tĩnh Lặng"
+              />
+            </div>
+            <div class="project-content bg-light rounded p-4">
+              <div class="project-content-inner">
+                <div class="project-icon mb-3">
+                  <i class="fas fa-spa fa-4x text-primary"></i>
+                </div>
+                <p class="text-dark fs-5 mb-3">Đèn Thơm Tĩnh Lặng</p>
+                <a href="#" class="h4"
+                  >Sự Tĩnh Lặng Và Thư Giãn Trong Từng Ánh Sáng</a
+                >
+                <p class="text-dark mt-2">
+                  Kết hợp giữa ánh sáng êm dịu và hương thơm nhẹ nhàng, dòng đèn
+                  thơm của Saroma mang lại không gian thư giãn tối đa cho mọi
+                  gia đình.
+                </p>
+                <div class="pt-4">
+                  <a class="btn btn-light rounded-pill py-3 px-5" href="#"
+                    >Xem Thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid blog pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Blog Của Chúng Tôi</h4>
+          <h1 class="display-4">Bài Viết & Tin Tức Về Saroma</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div
+              class="blog-item bg-light rounded p-4"
+              style="background-image: url(img/bg.png)"
+            >
+              <div class="mb-4">
+                <h4 class="text-primary mb-2">Nến Thơm</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0">
+                    <span class="text-dark fw-bold"> Mar 14, 2024
+                  </p>
+                  <p class="mb-0"> Nguyễn Thị Hoa
+                  </p>
+                </div>
+              </div>
+              <div class="project-img">
+                <img
+                  src="img/blog-1.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Nến thơm Saroma"
+                />
+                <div class="blog-plus-icon">
+                  <a
+                    href="img/blog-1.jpg"
+                    data-lightbox="blog-1"
+                    class="btn btn-primary btn-md-square rounded-pill"
+                    ><i class="fas fa-plus fa-1x"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="my-4">
+                <a href="#" class="h4"
+                  >Khám Phá Những Hương Thơm Độc Đáo Của Saroma</a
+                >
+              </div>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                >Tìm Hiểu Thêm</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div
+              class="blog-item bg-light rounded p-4"
+              style="background-image: url(img/bg.png)"
+            >
+              <div class="mb-4">
+                <h4 class="text-primary mb-2">Văn Hóa & Cảm Hứng</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0"> Mar 14, 2024
+                  </p>
+                  <p class="mb-0">
+                    <span class="text-dark fw-bold">Bởi</span> Nguyễn Thị Hoa
+                  </p>
+                </div>
+              </div>
+              <div class="project-img">
+                <img
+                  src="img/blog-2.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Văn hóa Sapa và cảm hứng Saroma"
+                />
+                <div class="blog-plus-icon">
+                  <a
+                    href="img/blog-2.jpg"
+                    data-lightbox="blog-2"
+                    class="btn btn-primary btn-md-square rounded-pill"
+                    ><i class="fas fa-plus fa-1x"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="my-4">
+                <a href="#" class="h4"
+                  >Vẻ Đẹp Văn Hóa Sapa Được Thổi Hồn Vào Từng Sản Phẩm Saroma</a
+                >
+              </div>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                >Tìm Hiểu Thêm</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div
+              class="blog-item bg-light rounded p-4"
+              style="background-image: url(img/bg.png)"
+            >
+              <div class="mb-4">
+                <h4 class="text-primary mb-2">Phong Cách Sống</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0"> Mar 14, 2024
+                  </p>
+                  <p class="mb-0">
+                    <span class="text-dark fw-bold">Bởi</span> Nguyễn Thị Hoa
+                  </p>
+                </div>
+              </div>
+              <div class="project-img">
+                <img
+                  src="img/blog-3.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Phong cách sống Saroma"
+                />
+                <div class="blog-plus-icon">
+                  <a
+                    href="img/blog-3.jpg"
+                    data-lightbox="blog-3"
+                    class="btn btn-primary btn-md-square rounded-pill"
+                    ><i class="fas fa-plus fa-1x"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="my-4">
+                <a href="#" class="h4"
+                  >Cách Tận Hưởng Không Gian Sống Với Nến Thơm Saroma</a
+                >
+              </div>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                >Tìm Hiểu Thêm</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Team Section Start -->
+    <div class="container-fluid team pb-5">
+      <div class="container pb-5">
+        <div class="text-center mx-auto pb-5" style="max-width: 800px">
+          <h4 class="text-primary">Đội Ngũ Của Chúng Tôi</h4>
+          <h1 class="display-4">Thành Viên Đội Ngũ Saroma</h1>
+        </div>
+
+        <!-- Owl Carousel Start -->
+        <div class="team-carousel owl-carousel owl-theme">
+          <!-- Team Member Item -->
+          <div class="team-item rounded">
+            <div class="team-img">
+              <img
+                src="img/team-1.jpg"
+                class="img-fluid w-100 rounded-top"
+                alt="Nguyễn Hương Quỳnh"
+              />
+            </div>
+            <div class="team-content bg-dark text-center rounded-bottom p-4">
+              <h4 class="text-white">Nguyễn Hương Quỳnh</h4>
+              <p class="text-muted mb-0">Chief Executive Officer (CEO)</p>
+            </div>
+          </div>
+          <!-- Team Member Item -->
+          <div class="team-item rounded">
+            <div class="team-img">
+              <img
+                src="img/team-2.jpg"
+                class="img-fluid w-100 rounded-top"
+                alt="Lâm Việt Anh"
+              />
+            </div>
+            <div class="team-content bg-dark text-center rounded-bottom p-4">
+              <h4 class="text-white">Lâm Việt Anh</h4>
+              <p class="text-muted mb-0">Chief Commercial Officer (CCO)</p>
+            </div>
+          </div>
+          <!-- Team Member Item -->
+          <div class="team-item rounded">
+            <div class="team-img">
+              <img
+                src="img/team-3.jpg"
+                class="img-fluid w-100 rounded-top"
+                alt="Nguyễn Lê Đại Sơn"
+              />
+            </div>
+            <div class="team-content bg-dark text-center rounded-bottom p-4">
+              <h4 class="text-white">Nguyễn Lê Đại Sơn</h4>
+              <p class="text-muted mb-0">Chief Marketing Officer (CMO)</p>
+            </div>
+          </div>
+          <!-- Team Member Item -->
+          <div class="team-item rounded">
+            <div class="team-img">
+              <img
+                src="img/team-4.jpg"
+                class="img-fluid w-100 rounded-top"
+                alt="Trần Thị Ánh Nguyệt"
+              />
+            </div>
+            <div class="team-content bg-dark text-center rounded-bottom p-4">
+              <h4 class="text-white">Trần Thị Ánh Nguyệt</h4>
+              <p class="text-muted mb-0">Chief Technology Officer (CTO)</p>
+            </div>
+          </div>
+          <!-- Team Member Item (temporary image from team-1) -->
+          <div class="team-item rounded">
+            <div class="team-img">
+              <img
+                src="img/team-1.jpg"
+                class="img-fluid w-100 rounded-top"
+                alt="Nguyễn Thùy Linh"
+              />
+            </div>
+            <div class="team-content bg-dark text-center rounded-bottom p-4">
+              <h4 class="text-white">Nguyễn Thùy Linh</h4>
+              <p class="text-muted mb-0">Chief Operations Officer (COO)</p>
+            </div>
+          </div>
+          <!-- Team Member Item (temporary image from team-1) -->
+          <div class="team-item rounded">
+            <div class="team-img">
+              <img
+                src="img/team-1.jpg"
+                class="img-fluid w-100 rounded-top"
+                alt="Lê Ngọc Cương"
+              />
+            </div>
+            <div class="team-content bg-dark text-center rounded-bottom p-4">
+              <h4 class="text-white">Lê Ngọc Cương</h4>
+              <p class="text-muted mb-0">Chief Financial Officer (CFO)</p>
+            </div>
+          </div>
+        </div>
+        <!-- Owl Carousel End -->
+      </div>
+    </div>
+    <!-- Team Section End -->
+
+    <!-- Include jQuery and Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel Script -->
+    <script>
+      $(document).ready(function () {
+        $(".team-carousel").owlCarousel({
+          loop: true,
+          margin: 15,
+          nav: true,
+          navText: [
+            "<i class='fas fa-arrow-left'></i>",
+            "<i class='fas fa-arrow-right'></i>",
+          ],
+          autoplay: true,
+          autoplayTimeout: 2000, // 2 seconds per slide
+          autoplayHoverPause: true,
+          responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 },
+            1200: { items: 4 }, // Show 4 team members at once on larger screens
+          },
+        });
+      });
+    </script>
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial bg-light py-5">
+      <div class="container py-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="h-100 rounded">
+              <h4 class="text-primary">Đánh Giá Của Khách Hàng</h4>
+              <h1 class="display-4 mb-4" style="color: #000">
+                Khách Hàng Nói Gì
+              </h1>
+              <p class="mb-4" style="color: #000">
+                Chúng tôi rất tự hào khi mang đến những sản phẩm chất lượng, đậm
+                đà bản sắc văn hóa và thiên nhiên Việt Nam. Dưới đây là những
+                chia sẻ từ các khách hàng đã trải nghiệm sản phẩm của Saroma.
+              </p>
+              <a
+                class="btn btn-primary rounded-pill text-white py-3 px-5"
+                href="#"
+              >
+                Xem Tất Cả Đánh Giá <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-8">
+            <div
+              class="testimonial-carousel owl-carousel wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="testimonial-item bg-white rounded p-4 wow fadeInUp"
+                data-wow-delay="0.3s"
+              >
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-quote-left fa-3x text-dark me-3"></i>
+                  </div>
+                  <p class="mt-4" style="color: #000">
+                    "Nến Saroma mang đến không gian thật sự đặc biệt cho ngôi
+                    nhà của tôi! Hương thơm của nó như gợi nhớ vẻ đẹp của Việt
+                    Nam, khiến không gian sống của tôi trở nên tươi mới và giàu
+                    bản sắc văn hóa. Đây là món đồ không thể thiếu cho những ai
+                    yêu thích chất lượng và truyền thống."
+                  </p>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <div class="my-auto text-end">
+                    <h5 style="color: #000">Nguyễn Mai Phương</h5>
+                    <p class="mb-0" style="color: #000">
+                      Nhà Thiết Kế Nội Thất
+                    </p>
+                  </div>
+                  <div class="bg-white rounded-circle ms-3">
+                    <img
+                      src="img/testimonial-1.jpg"
+                      class="rounded-circle p-2"
+                      style="
+                        width: 80px;
+                        height: 80px;
+                        border: 1px solid;
+                        border-color: var(--bs-primary);
+                      "
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonial-item bg-white rounded p-4 wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-quote-left fa-3x text-dark me-3"></i>
+                  </div>
+                  <p class="mt-4" style="color: #000">
+                    "Tôi thực sự yêu thích nến Saroma được lấy cảm hứng từ Sapa.
+                    Mỗi lần thắp nến, tôi như được đưa đến những cánh đồng xanh
+                    mướt của miền Bắc Việt Nam. Chất lượng và sự tỉ mỉ hiện rõ
+                    trong từng sản phẩm."
+                  </p>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <div class="my-auto text-end">
+                    <h5 style="color: #000">Trần Minh Khoa</h5>
+                    <p class="mb-0" style="color: #000">Nhà Blogger Du Lịch</p>
+                  </div>
+                  <div class="bg-white rounded-circle ms-3">
+                    <img
+                      src="img/testimonial-2.jpg"
+                      class="rounded-circle p-2"
+                      style="
+                        width: 80px;
+                        height: 80px;
+                        border: 1px solid;
+                        border-color: var(--bs-primary);
+                      "
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonial-item bg-white rounded p-4 wow fadeInUp"
+                data-wow-delay="0.7s"
+              >
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-quote-left fa-3x text-dark me-3"></i>
+                  </div>
+                  <p class="mt-4" style="color: #000">
+                    "Nến Saroma thật sự là một sản phẩm độc đáo. Chúng mang lại
+                    cảm giác yên bình và ấm cúng cho bất kỳ căn phòng nào. Bạn
+                    bè tôi thường hỏi tôi mua chúng ở đâu, và tôi rất thích chia
+                    sẻ câu chuyện về những mùi hương này."
+                  </p>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <div class="my-auto text-end">
+                    <h5 style="color: #000">Lê Hồng Nhung</h5>
+                    <p class="mb-0" style="color: #000">Giáo Viên Yoga</p>
+                  </div>
+                  <div class="bg-white rounded-circle ms-3">
+                    <img
+                      src="img/testimonial-3.jpg"
+                      class="rounded-circle p-2"
+                      style="
+                        width: 80px;
+                        height: 80px;
+                        border: 1px solid;
+                        border-color: var(--bs-primary);
+                      "
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- FAQ Start -->
+    <div class="container-fluid faq py-5">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="pb-5">
+              <h4 class="text-primary">Câu Hỏi Thường Gặp</h4>
+              <h1 class="display-4">Giải Đáp Các Thắc Mắc Về Saroma</h1>
+            </div>
+            <div class="accordion bg-light rounded p-4" id="accordionExample">
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button text-dark fs-5 fw-bold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Sản phẩm nến thơm của Saroma có nguồn gốc từ đâu?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body my-2">
+                    <h5>Nến thơm Saroma mang hơi thở thiên nhiên của Sapa.</h5>
+                    <p style="color: #000">
+                      Sản phẩm của chúng tôi được lấy cảm hứng từ vẻ đẹp hùng vĩ
+                      của Sapa, từ ruộng bậc thang đến hoa đào nở rộ. Nguyên
+                      liệu tự nhiên cùng hương thơm độc đáo giúp mang lại không
+                      gian ấm áp và đậm bản sắc Việt Nam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Sản phẩm nến của Saroma có an toàn cho sức khỏe không?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body my-2">
+                    <h5>Nến Saroma sử dụng nguyên liệu tự nhiên và an toàn.</h5>
+                    <p style="color: #000">
+                      Tất cả các sản phẩm của Saroma đều được làm từ nguyên liệu
+                      tự nhiên, không chứa hóa chất độc hại, đảm bảo an toàn cho
+                      sức khỏe và thân thiện với môi trường. Chúng tôi cam kết
+                      mang đến trải nghiệm hương thơm thư giãn, tốt lành cho
+                      khách hàng.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Thời gian đốt của nến Saroma kéo dài bao lâu?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body my-2">
+                    <h5>
+                      Thời gian cháy dài, mang lại trải nghiệm hương thơm bền
+                      vững.
+                    </h5>
+                    <p style="color: #000">
+                      Nến Saroma được thiết kế để cháy lâu dài, tùy vào kích
+                      thước mà thời gian đốt có thể kéo dài từ 20 đến 40 giờ,
+                      giúp không gian của bạn luôn ngập tràn hương thơm dễ chịu.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-0">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Saroma có hỗ trợ khách hàng trong việc chọn mùi hương phù
+                    hợp không?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body my-2">
+                    <h5>
+                      Chúng tôi tư vấn và giúp bạn chọn mùi hương phù hợp.
+                    </h5>
+                    <p style="color: #000">
+                      Đội ngũ Saroma luôn sẵn sàng hỗ trợ bạn trong việc chọn
+                      lựa mùi hương phù hợp với không gian và sở thích cá nhân,
+                      nhằm mang đến trải nghiệm tuyệt vời nhất. Hãy liên hệ với
+                      chúng tôi để được tư vấn chi tiết.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="faq-img RotateMoveRight rounded">
+              <img
+                src="img/faq-img.jpg"
+                class="img-fluid rounded w-100"
+                alt="Image"
+              />
+              <a
+                class="faq-btn btn btn-primary rounded-pill text-white py-3 px-5"
+                href="#"
+                >Xem Thêm Q&A <i class="fas fa-arrow-right ms-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <h4 class="text-white mb-4">Saroma</h4>
+                <p class="mb-3">
+                  Nến thơm sử dụng vật liệu thiên nhiên, cải thiện sự tập trung,
+                  hỗ trợ giấc ngủ, và nâng cao sức khỏe tinh thần.
+                </p>
+                <div class="position-relative mx-auto rounded-pill">
+                  <input
+                    class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
+                    type="text"
+                    placeholder="Nhập email của bạn"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
+                  >
+                    Đăng Ký
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Khám Phá</h4>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Trang Chủ</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Dịch Vụ</a>
+              <a href="#"
+                ><i class="fas fa-angle-right me-2"></i> Về Chúng Tôi</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-right me-2"></i> Dự Án Mới Nhất</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-right me-2"></i> Lời Chứng Thực</a
+              >
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Đội Ngũ</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Liên Hệ</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Thông Tin Liên Lạc</h4>
+              <a href=""
+                ><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York,
+                USA</a
+              >
+              <a href=""
+                ><i class="fas fa-envelope me-2"></i> info@example.com</a
+              >
+              <a href=""
+                ><i class="fas fa-envelope me-2"></i> info@example.com</a
+              >
+              <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+              <a href="" class="mb-3"
+                ><i class="fas fa-print me-2"></i> +012 345 67890</a
+              >
+              <div class="d-flex align-items-center">
+                <a class="btn btn-light btn-md-square me-2" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-light btn-md-square me-2" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-light btn-md-square me-2" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-light btn-md-square me-0" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item-post d-flex flex-column">
+              <h4 class="text-white mb-4">Bài Viết Phổ Biến</h4>
+              <div class="d-flex flex-column mb-3">
+                <p class="text-uppercase text-primary mb-2">Đầu Tư</p>
+                <a href="#" class="text-body"
+                  >Xem Lại Mục Tiêu Đầu Tư & Phân Phối Của Bạn</a
+                >
+              </div>
+              <div class="d-flex flex-column mb-3">
+                <p class="text-uppercase text-primary mb-2">Kinh Doanh</p>
+                <a href="#" class="text-body"
+                  >Phỏng Vấn Giám Đốc Từ Dimensional Fund Advisors</a
+                >
+              </div>
+              <div class="footer-btn text-start">
+                <a href="#" class="btn btn-light rounded-pill px-4"
+                  >Xem Tất Cả Bài Viết <i class="fa fa-arrow-right ms-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- Play Music Button with Hover Effect -->
+    <div id="musicControlContainer" class="music-control-container">
+      <a
+        href="#"
+        id="playPauseButton"
+        class="btn btn-primary btn-lg-square music-control"
+      >
+        <i id="playPauseIcon" class="fa fa-play"></i>
+      </a>
+      <div id="musicPopup" class="music-popup">
+        <div class="progress-bar-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <!-- Hidden YouTube Player -->
+    <div id="youtubePlayer" style="display: none"></div>
+
+    <!-- JavaScript for YouTube API and Button/Progress Logic -->
+    <script>
+      var player;
+      var isPlaying = false;
+      var duration = 0;
+
+      // Initialize YouTube Player
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("youtubePlayer", {
+          videoId: "hpiv1A0igZo", // Replace with your video ID
+          events: {
+            onReady: onPlayerReady,
+            onStateChange: onPlayerStateChange,
+          },
+          playerVars: {
+            autoplay: 0,
+            loop: 1,
+            playlist: "hpiv1A0igZo",
+            controls: 0,
+            showinfo: 0,
+            modestbranding: 1,
+          },
+        });
+      }
+
+      // Once the Player is Ready
+      function onPlayerReady(event) {
+        duration = player.getDuration();
+        document.getElementById("duration").innerText = formatTime(duration);
+        setInterval(updateProgressBar, 500);
+      }
+
+      // Handle Play/Pause and Popup Toggle
+      document
+        .getElementById("playPauseButton")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          if (isPlaying) {
+            player.pauseVideo();
+            document
+              .getElementById("playPauseIcon")
+              .classList.replace("fa-pause", "fa-play");
+            document.getElementById("musicPopup").style.display = "none";
+          } else {
+            player.playVideo();
+            document
+              .getElementById("playPauseIcon")
+              .classList.replace("fa-play", "fa-pause");
+            document.getElementById("musicPopup").style.display = "block";
+          }
+          isPlaying = !isPlaying;
+        });
+
+      // Update Progress Bar and Time Display
+      function updateProgressBar() {
+        if (isPlaying) {
+          const currentTime = player.getCurrentTime();
+          const progressPercent = (currentTime / duration) * 100;
+          document.getElementById(
+            "progressBar"
+          ).style.width = `${progressPercent}%`;
+          document.getElementById("currentTime").innerText =
+            formatTime(currentTime);
+        }
+      }
+
+      // Handle YouTube Player State Change (e.g., when video ends)
+      function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.ENDED) {
+          player.playVideo(); // Loop the video
+        }
+      }
+
+      // Format Time in MM:SS
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = Math.floor(seconds % 60);
+        return `${minutes}:${
+          remainingSeconds < 10 ? "0" : ""
+        }${remainingSeconds}`;
+      }
+    </script>
+
+    <!-- Feedback Button -->
+    <a
+      href="#"
+      class="btn btn-primary btn-lg-square btn-feedback"
+      data-bs-toggle="modal"
+      data-bs-target="#feedbackModal"
+    >
+      <i class="fa fa-smile"></i>
+    </a>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="feedbackModalLabel">
+              Chọn cảm xúc của bạn
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="feedbackForm">
+              <!-- Question 1 -->
+              <div class="mb-4">
+                <h6>Cảm xúc của bạn hôm nay</h6>
+                <label class="form-label">Bạn cảm thấy thế nào hôm nay?</label>
+                <select class="form-select" id="emotionSelect">
+                  <option value="happy">Vui vẻ</option>
+                  <option value="neutral">Bình thường</option>
+                  <option value="sad">Buồn</option>
+                  <option value="stressed">Căng thẳng</option>
+                </select>
+              </div>
+              <!-- Question 2 -->
+              <div class="mb-4">
+                <h6>Lý do cảm xúc</h6>
+                <label class="form-label">Điều gì khiến bạn cảm thấy như vậy?</label>
+                <input type="text" class="form-control" placeholder="Nhập lý do" />
+              </div>
+              <!-- Question 3 -->
+              <div class="mb-4">
+                <h6>Khó khăn trong ngày</h6>
+                <label class="form-label">Bạn đã gặp phải khó khăn gì hôm nay không?</label>
+                <select class="form-select">
+                  <option value="no">Không</option>
+                  <option value="yes">Có</option>
+                  <option value="maybe">Một chút</option>
+                </select>
+              </div>
+              <!-- Question 4 -->
+              <div class="mb-4">
+                <h6>Góp ý cải thiện</h6>
+                <label class="form-label">Bạn muốn cải thiện điều gì trong ngày hôm nay?</label>
+                <textarea class="form-control" rows="3" placeholder="Nhập ý kiến của bạn"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Gửi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const selectedEmotion = document.getElementById('emotionSelect').value;
+        alert('Cảm ơn bạn đã chia sẻ cảm xúc: ' + selectedEmotion);
+      });
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
