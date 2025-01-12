@@ -1027,6 +1027,7 @@ button, .btn {
   position: fixed;
   bottom: 170px;
   right: 30px;
+  z-index: 2;
 }
 
 /*** copyright end ***/
