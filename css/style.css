@@ -2,20 +2,20 @@
 /*** Spinner Start ***/
 /*** Spinner ***/
 body {
-    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    font-family: 'Open Sans', 'Great Vibes', cursive;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    font-family: 'Open Sans', 'Great Vibes', cursive;
 }
 button, .btn {
-    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    font-family: 'Open Sans', 'Great Vibes', cursive;
 }
 .navbar-brand img {
     margin-left: 20px; /* Tăng giá trị theo nhu cầu */
 }
 
 .btn-primary, .btn-dark, .btn-light {
-    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    font-family: 'Open Sans', 'Great Vibes', cursive;
 }
 #spinner {
     opacity: 0;
