@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Saroma - Nến Thơm</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Allura&family=Lobster+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 d-none d-lg-block">
+      <div class="container px-0"></div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+      <div
+        class="position-absolute bg-dark"
+        style="left: 0; top: 0; width: 100%; height: 100%"
+      ></div>
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+          <a href="index.html" class="navbar-brand p-0">
+            <img
+              src="img/logo.png"
+              alt="Saroma"
+              class="img-fluid"
+              style="height: 70px; margin-left: 20px"
+            />
+            <!-- Tăng giá trị theo nhu cầu -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+              <a
+                href="index.html"
+                class="nav-item nav-link active"
+                style="color: #000"
+                >Trang Chủ</a
+              >
+              <a href="about.html" class="nav-item nav-link">Giới Thiệu</a>
+              <a href="service.html" class="nav-item nav-link">Dịch Vụ</a>
+              <a href="project.html" class="nav-item nav-link">Dự Án</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Trang</a
+                >
+                <div class="dropdown-menu m-0">
+                  <a href="blog.html" class="dropdown-item"
+                    >Blog Của Chúng Tôi</a
+                  >
+                  <a href="faqs.html" class="dropdown-item">FAQs</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+              <button
+                class="btn btn-primary btn-md-square mx-2"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+              <a
+                href="#"
+                class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0"
+              >
+                Bắt đầu với Saroma
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h4 class="modal-title mb-0" id="exampleModalLabel">
+              Search by keyword
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+      <div class="bg-breadcrumb-single"></div>
+      <div class="container text-center py-5" style="max-width: 900px"></div>
+    </div>
+    <!-- Header End -->
+
+    <!-- detail Start -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row gx-5">
+          <aside class="col-lg-6">
+            <div class="border rounded-4 mb-3 d-flex justify-content-center">
+              <a
+                data-fslightbox="mygalley"
+                class="rounded-4"
+                target="_blank"
+                data-type="image"
+                href="img/service-2.jpg"
+              >
+                <img
+                  style="max-width: 100%; max-height: 50vh; margin: auto"
+                  class="rounded-4 fit"
+                  src="img/service-2.jpg"
+                />
+              </a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+              <a
+                data-fslightbox="mygalley"
+                class="border mx-1 rounded-2"
+                target="_blank"
+                data-type="image"
+                href="img/service-2.jpg"
+                class="item-thumb"
+              >
+                <img
+                  width="60"
+                  height="60"
+                  class="rounded-2"
+                  src="img/service-2.jpg"
+                />
+              </a>
+              <a
+                data-fslightbox="mygalley"
+                class="border mx-1 rounded-2"
+                target="_blank"
+                data-type="image"
+                href="img/service-2.jpg"
+                class="item-thumb"
+              >
+                <img
+                  width="60"
+                  height="60"
+                  class="rounded-2"
+                  src="img/service-2.jpg"
+                />
+              </a>
+              <a
+                data-fslightbox="mygalley"
+                class="border mx-1 rounded-2"
+                target="_blank"
+                data-type="image"
+                href="img/service-2.jpg"
+                class="item-thumb"
+              >
+                <img
+                  width="60"
+                  height="60"
+                  class="rounded-2"
+                  src="img/service-2.jpg"
+                />
+              </a>
+              <a
+                data-fslightbox="mygalley"
+                class="border mx-1 rounded-2"
+                target="_blank"
+                data-type="image"
+                href="img/service-2.jpg"
+                class="item-thumb"
+              >
+                <img
+                  width="60"
+                  height="60"
+                  class="rounded-2"
+                  src="img/service-2.jpg"
+                />
+              </a>
+              <a
+                data-fslightbox="mygalley"
+                class="border mx-1 rounded-2"
+                target="_blank"
+                data-type="image"
+                href="img/service-2.jpg"
+                class="item-thumb"
+              >
+                <img
+                  width="60"
+                  height="60"
+                  class="rounded-2"
+                  src="img/service-2.jpg"
+                />
+              </a>
+            </div>
+            <!-- thumbs-wrap.// -->
+            <!-- gallery-wrap .end// -->
+          </aside>
+          <main class="col-lg-6">
+            <div class="ps-lg-3">
+              <h4 class="title text-dark">
+                Quality Men's Hoodie for Winter, Men's Fashion <br />
+                Casual Hoodie
+              </h4>
+              <div class="d-flex flex-row my-3">
+                <div class="text-warning mb-1 me-2">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="ms-1"> 4.5 </span>
+                </div>
+                <span class="text-muted"
+                  ><i class="fas fa-shopping-basket fa-sm mx-1"></i>154
+                  orders</span
+                >
+                <span class="text-success ms-2">In stock</span>
+              </div>
+
+              <div class="mb-3">
+                <span class="h5">$75.00</span>
+                <span class="text-muted">/per box</span>
+              </div>
+
+              <p class="text_detail">
+                Modern look and quality demo item is a streetwear-inspired
+                collection that continues to break away from the conventions of
+                mainstream fashion. Made in Italy, these black and brown
+                clothing low-top shirts for men.
+              </p>
+
+              <div class="row">
+                <dt class="col-3 text_detail">Type:</dt>
+                <dd class="col-9 text_detail">Regular</dd>
+
+                <dt class="col-3 text_detail">Color</dt>
+                <dd class="col-9 text_detail">Brown</dd>
+
+                <dt class="col-3 text_detail">Material</dt>
+                <dd class="col-9 text_detail">Cotton, Jeans</dd>
+
+                <dt class="col-3 text_detail">Brand</dt>
+                <dd class="col-9 text_detail">Reebook</dd>
+              </div>
+
+              <hr />
+
+              <div class="row mb-4">
+                <div class="col-md-4 col-6">
+                  <label class="mb-2 text_detail">Size</label>
+                  <select
+                    class="form-select border border-secondary"
+                    style="height: 35px"
+                  >
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                  </select>
+                </div>
+                <!-- col.// -->
+                <div class="col-md-4 col-6 mb-3">
+                  <label class="mb-2 d-block text_detail">Quantity</label>
+                  <div class="input-group mb-3" style="width: 170px">
+                    <button
+                      class="btn btn-white border border-secondary px-3"
+                      type="button"
+                      id="button-addon1"
+                      data-mdb-ripple-color="dark"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="form-control text-center border border-secondary"
+                      placeholder="14"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                    />
+                    <button
+                      class="btn btn-white border border-secondary px-3"
+                      type="button"
+                      id="button-addon2"
+                      data-mdb-ripple-color="dark"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-warning shadow-0"> Buy now </a>
+              <a href="#" class="btn btn-primary shadow-0">
+                <i class="me-1 fa fa-shopping-basket"></i> Add to cart
+              </a>
+              <a
+                href="#"
+                class="btn btn-light border border-secondary py-2 icon-hover px-3"
+              >
+                <i class="me-1 fa fa-heart fa-lg"></i> Save
+              </a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+
+    <section class="bg-light border-top py-4">
+      <div class="container">
+        <div class="row gx-4">
+          <div class="col-lg-8 mb-4">
+            <div class="border rounded-2 px-3 py-2 bg-white">
+              <!-- Pills content -->
+              <div class="tab-content" id="ex1-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="ex1-pills-1"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-1"
+                >
+                  <p class="text_detail">
+                    With supporting text below as a natural lead-in to
+                    additional content. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <div class="row mb-2">
+                    <div class="col-12 col-md-6">
+                      <ul class="list-unstyled mb-0">
+                        <li class="text_detail">
+                          <i class="fas fa-check text-success me-2"></i>Some
+                          great feature name here
+                        </li>
+                        <li class="text_detail">
+                          <i class="fas fa-check text-success me-2"></i>Lorem
+                          ipsum dolor sit amet, consectetur
+                        </li>
+                        <li class="text_detail">
+                          <i class="fas fa-check text-success me-2"></i>Duis
+                          aute irure dolor in reprehenderit
+                        </li>
+                        <li class="text_detail">
+                          <i class="fas fa-check text-success me-2"></i>Optical
+                          heart sensor
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6 mb-0">
+                      <ul class="list-unstyled">
+                        <li class="text_detail">
+                          <i class="fas fa-check text-success me-2"></i>Easy
+                          fast and ver good
+                        </li>
+                        <li class="text_detail">
+                          <i class="fas fa-check text-success me-2"></i>Some
+                          great feature name here
+                        </li>
+                        <li class="text_detail">
+                          <i class="fas fa-check text-success me-2"></i>Modern
+                          style and design
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <table class="table border mt-3 mb-2">
+                    <tr>
+                      <th class="py-2">Display:</th>
+                      <td class="py-2">
+                        13.3-inch LED-backlit display with IPS
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Processor capacity:</th>
+                      <td class="py-2">2.3GHz dual-core Intel Core i5</td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Camera quality:</th>
+                      <td class="py-2">720p FaceTime HD camera</td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Memory</th>
+                      <td class="py-2">8 GB RAM or 16 GB RAM</td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Graphics</th>
+                      <td class="py-2">Intel Iris Plus Graphics 640</td>
+                    </tr>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane fade mb-2"
+                  id="ex1-pills-2"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-2"
+                >
+                  Tab content or sample information now <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo
+                </div>
+                <div
+                  class="tab-pane fade mb-2"
+                  id="ex1-pills-3"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-3"
+                >
+                  Another tab content or sample information now <br />
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id
+                  est laborum.
+                </div>
+                <div
+                  class="tab-pane fade mb-2"
+                  id="ex1-pills-4"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-4"
+                >
+                  Some other tab content or sample information now <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </div>
+              </div>
+              <!-- Pills content -->
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="px-0 border rounded-2 shadow-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm khác</h5>
+                  <div class="d-flex mb-3">
+                    <a href="#" class="me-3">
+                      <img
+                        src="img/projects-1.jpg"
+                        style="min-width: 96px; height: 96px"
+                        class="img-md img-thumbnail"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="#" class="nav-link mb-1">
+                        Rucksack Backpack Large <br />
+                        Line Mounts
+                      </a>
+                      <strong class="text-dark"> $38.90</strong>
+                    </div>
+                  </div>
+
+                  <div class="d-flex mb-3">
+                    <a href="#" class="me-3">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/bootstrap-ecommerce/items/9.webp"
+                        style="min-width: 96px; height: 96px"
+                        class="img-md img-thumbnail"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="#" class="nav-link mb-1">
+                        Summer New Men's Denim <br />
+                        Jeans Shorts
+                      </a>
+                      <strong class="text-dark"> $29.50</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- detail End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <h4 class="text-white mb-4">Saroma</h4>
+                <p class="mb-3">
+                  Nến thơm sử dụng vật liệu thiên nhiên, cải thiện sự tập trung,
+                  hỗ trợ giấc ngủ, và nâng cao sức khỏe tinh thần.
+                </p>
+                <div class="position-relative mx-auto rounded-pill">
+                  <input
+                    class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
+                    type="text"
+                    placeholder="Nhập email của bạn"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
+                  >
+                    Đăng Ký
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Khám Phá</h4>
+              <a href="index.html"
+                ><i class="fas fa-angle-right me-2"></i> Trang Chủ</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Dịch Vụ</a
+              >
+              <a href="project.html"
+                ><i class="fas fa-angle-right me-2"></i> Dự Án Mới Nhất</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Thông Tin Liên Lạc</h4>
+              <a href=""
+                ><i class="fa fa-map-marker-alt me-2"></i> Km29 Đại lộ Thăng
+                Long, Thạch Hoà, Thạch Thất, Hà Nội</a
+              >
+              <a href=""
+                ><i class="fas fa-envelope me-2"></i> saroma.candle@gmail.com</a
+              >
+              <i><i class="fas fa-phone me-2"></i> +358 8 83198 </i>
+              <div class="d-flex align-items-center">
+                <a
+                  class="btn btn-light btn-md-square me-2"
+                  href="https://www.facebook.com/profile.php?id=61572096927937"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-light btn-md-square me-2"
+                  href="https://www.instagram.com/saroma_candle/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item-post d-flex flex-column">
+              <div class="footer-btn text-start">
+                <a href="#" class="btn btn-light rounded-pill px-4"
+                  >Xem Tất Cả Bài Viết <i class="fa fa-arrow-right ms-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
