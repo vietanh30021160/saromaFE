@@ -802,6 +802,13 @@ button, .btn {
     transition: 0.5s;
 }
 
+.team .team-item .team-img img {
+    height: 300px; /* Đặt chiều cao cố định, tùy chỉnh theo ý muốn */
+    object-fit: cover; /* Đảm bảo ảnh giữ được tỉ lệ nhưng sẽ cắt gọn nếu cần */
+    width: 100%; /* Đảm bảo ảnh lấp đầy chiều rộng */
+    display: block; /* Xóa margin dư nếu có */
+}
+
 .team .team-item:hover .team-img::after {
     height: 100%;
 }
